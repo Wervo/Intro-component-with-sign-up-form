@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding:0;
+    box-sizing: border-box;
+    margin:0;
+}
+
+body{
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+.container{
+   justify-content: center;
+   height:100vh;
+   align-items: center;
+   display: flex;
+   font-family: "Poppins", sans-serif;
+}
+
+.left{
+    flex-direction: column;
+    display:flex;
+    gap:1rem;
+    transform: translateX(200px);
+    color:white;
+}
+
+.left h1{
+    width:45%;
+    font-size: 3rem;
+}
+.left p{
+     width:50%;
+}
+
+.right{
+    transform: translate(-200px, 70px);
+}
+
+.trial{
+    text-align: center;
+    background-color: hsl(248, 32%, 49%);
+    color:white;
+    margin-bottom:20px;
+    padding:15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.16);
+}
+
+.trial span{
+    font-weight: 300;
+}
+
+.trial::before{
+    content: "Try it free 7 days";
+    font-weight: 500;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding:30px;
+    height:auto;
+    width:450px;
+    gap:1rem;
+    border-radius: 10px;
+    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.16);
+}
+
+.form input[type="text"]{
+      height:50px;
+      border-radius: 5px;
+      border:1px solid hsl(246, 25%, 77%);
+      padding: 10px;
+}
+
+.form input[type="text"]::placeholder{
+    transform: translateX(20px);
+    color:hsl(245, 4%, 49%);
+    font-weight:600;
+    font-size: 0.7rem;
+}
+
+.hidden img{
+    height:20px;
+    width:20px;
+    display: flex;
+    flex-direction: column;
+    transform: translate(380px, -360px);
+}
+
+.password img{
+    transform: translate(380px,-265px);
+}
+
+.emailaddress img{
+    transform: translate(380px,-295px);
+}
+
+.lastname img{
+    transform: translate(380px,-325px);
+}
+
+.name img{
+    transform: translate(380px,-357px);
+}
+
+.hidden span{
+    font-size: 0.6rem;
+    display:block;
+    transform: translate(300px, -350px);
+    color:hsl(0, 100%, 74%);
+    font-style: italic;
+}
+
+.password span{
+    transform: translate(280px, -248px);
+}
+
+.emailaddress span{
+    transform: translate(280px, -280px);
+}
+
+.lastname span{
+    transform: translate(280px, -310px);
+}
+
+.name span{
+    transform: translate(280px, -343px);
+}
+
+.form button{
+    background-color: hsl(154, 59%, 51%);
+    color:white;
+    padding:15px;
+    border:none;
+    border-radius: 5px;
+    font-weight: 600;
+    box-shadow: 0px 3px 0px 0px hsl(154, 63%, 36%);
+    cursor: pointer;
+}
+
+.form span{
+    width:100%;
+    font-size: 0.7rem;
+    text-align: center;
+    color:hsl(246, 25%, 77%);
+}
+
+.form a{
+    text-decoration: none;
+    color:hsl(0, 100%, 74%);
+    font-weight: 600;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+    .left{
+        transform: translate(150px, 100px);
+    }
+
+    .left h1{
+        font-size:3rem;
+        width:75%;
+    }
+
+    .left p{
+        font-size:1rem ;
+        width:90%;
+    }
+    .right{
+        transform: translate(100px, 150px);
+    }
+}
+
+@media screen and (max-width:769px){
+
+   .left{
+    transform: translate(110px, 120px);
+    display: block;
+   }
+
+   .left h1{
+    font-size:2rem;
+    width:70%;
+}
+
+   .left p{
+    font-size:1rem ;
+    width:95%;
+}
+    .trial{
+        width:200%;
+    }
+    .form{
+        width:200%;
+    }
+
+   .right{
+    transform: translate(170px, 200px);
+    display: block;
+    
+}}
+
+@media screen and (max-width:426px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:0 auto;
+    }
+
+    .left{
+        justify-content: center;
+        margin: auto;
+    }
+
+    .right{
+        width:60%;
+        margin:0 auto;
+        justify-content: center;
+        transform: translateX(20px);
+    }
+
+}
+
+@media screen and (max-width:376px) {
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:0 auto;
+    }
+}
+
+@media screen and (max-width:321px){
+   
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:0 auto;
+    }
+}

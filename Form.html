@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Form.css">
+    <title>Sign Up Form</title>
+</head>
+<body>
+     <div class="container">
+        <div class="left">
+            <h1>Learn to code by watching others</h1>
+            <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+                but understanding how developers think is invaluable. </p>
+        </div>
+        
+    <div class="right">
+        <div class="trial">
+            <span> then $20/mo. thereafter</span>
+            </div>
+        
+        <div class="form">
+            <input type="text" id="name" placeholder="Name" autocomplete="family-name" >
+            <input type="text" id="lastname" placeholder="Last Name">
+            <input type="text" id="emailaddress" placeholder="Email Address" >
+            <input type="text" id="password" placeholder="Password">
+            <button id="submitBtn">CLAIM YOUR FREE TRIAL </button>
+            <span>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></span>
+        </div>
+
+        <div class="hidden">
+            <div class="name">
+                <img src="icon-error.svg">
+                <span>First Name cannot be empty</span>
+            </div>
+            
+            <div class="lastname">
+                <img src="icon-error.svg">
+                <span>Last Name cannot be empty</span>
+            </div>
+
+            <div class="emailaddress">
+                <img src="icon-error.svg">
+                <span>Looks like this is not an email</span>
+            </div>
+
+            <div class="password">
+                <img src="icon-error.svg">
+                <span>Password cannot be empty</span>
+            </div>
+        </div>
+    </div>
+     </div>
+</body>
+<script src="Form.js"></script>
+</html>
